@@ -1,0 +1,28 @@
+<mvc:View controllerName="logaligroup.com.invoices.controller.App"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+  <Shell id="shell">
+   <App id="app">
+    <pages>
+    <Page id="page" >
+    <content>
+      <Panel headerText="{i18n>HelloPanel}" expandable="true" expanded="true">
+        <content>
+          <Button id="button" text="{i18n>showHelloButtonText}"
+                              press="onShowHello"
+                              icon="sap-icon://accelerated"
+                              type="Neutral" />
+          <Input  class="sapUiSmallMarginBegin" 
+                  description="Hello {view>/recipient/name}"
+                  valueLiveUpdate="true"
+                  value="{view>/recipient/name}" width="60%"></Input>
+          <Text text="Hello {view>/recipient/name}" class="sapUiSmallMargin bodiElements" />      
+        </content>                
+      </Panel>
+       </content>
+      </Page>
+    </pages>
+   
+   </App>
+  </Shell>
+</mvc:View>
