@@ -4,25 +4,12 @@
   <Shell id="shell">
    <App id="app">
     <pages>
-    <Page id="page" >
-    <content>
-      <Panel headerText="{i18n>HelloPanel}" expandable="true" expanded="true">
-        <content>
-          <Button id="button" text="{i18n>showHelloButtonText}"
-                              press="onShowHello"
-                              icon="sap-icon://accelerated"
-                              type="Neutral" />
-          <Input  class="sapUiSmallMarginBegin" 
-                  description="Hello {view>/recipient/name}"
-                  valueLiveUpdate="true"
-                  value="{view>/recipient/name}" width="60%"></Input>
-          <Text text="Hello {view>/recipient/name}" class="sapUiSmallMargin bodiElements" />      
-        </content>                
-      </Panel>
+    <Page id="page" title="{i18n>appTitle}">
+       <content>
+         <mvc:XMLView id="viewHelloPanel" viewName="logaligroup.com.invoices.view.HelloPanel" type="XML"/>
        </content>
       </Page>
     </pages>
-   
    </App>
   </Shell>
 </mvc:View>

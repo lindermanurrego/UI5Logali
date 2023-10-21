@@ -24,14 +24,6 @@ sap.ui.define([
               let oModel = new JSONModel(oData);  
               this.getView().setModel(oModel,"view");
             },
-            onShowHello:function(){
-               MessageToast.show("Hello world",{
-                width:'18rem',
-                duration:5000
-               });
-
-            }
-
 	
         });
     });
